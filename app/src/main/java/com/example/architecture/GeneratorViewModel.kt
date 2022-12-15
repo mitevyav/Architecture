@@ -9,8 +9,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class GeneratorViewModel @Inject constructor(
-    private val model: GeneratorController,
+    private val controller: GeneratorController,
     private val viewState: GeneratorViewState
 ) : ViewModel(),
     GeneratorViewState by viewState,
-    GeneratorController by model
+    GeneratorController by controller
