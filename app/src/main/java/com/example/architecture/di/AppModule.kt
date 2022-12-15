@@ -1,7 +1,7 @@
 package com.example.architecture.di
 
-import com.example.architecture.mvcorwhatever.Generator
-import com.example.architecture.mvcorwhatever.GeneratorModel
+import com.example.architecture.mvcorwhatever.GeneratorControllerImp
+import com.example.architecture.mvcorwhatever.GeneratorController
 import com.example.architecture.mvcorwhatever.GeneratorView
 import com.example.architecture.mvcorwhatever.GeneratorViewState
 import com.example.architecture.mvcorwhatever.ViewAndViewStateImpl
@@ -26,5 +26,5 @@ abstract class AppModule {
 
     @Binds
     @ViewModelScoped
-    abstract fun bindModel(model: Generator): GeneratorModel
+    abstract fun bindModel(model: GeneratorControllerImp): GeneratorController
 }

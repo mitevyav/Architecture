@@ -1,6 +1,6 @@
 package com.example.architecture.mvcorwhatever
 
-interface GeneratorModel {
+interface GeneratorController {
 
     fun generateNewNumber()
 }
